@@ -19,6 +19,7 @@ export const StatusPage: React.FC = () => {
   });
 
   const isOnline = serverStatusQuery.data?.Name !== undefined;
+  const date = new Date();
   return (
     <div className="status-page-container">
       <img src={ValheimLogo} alt="logo valheim" />
@@ -34,6 +35,8 @@ export const StatusPage: React.FC = () => {
         <div>{serverStatusQuery.data?.Players?.Current}</div>
         <div>Version</div>
         <div>{serverStatusQuery.data?.Raw?.ExtraData?.Keywords}</div>
+        <div>Last check</div>
+        <div>{date.toLocaleString()}</div>
       </div>
     </div>
   );
