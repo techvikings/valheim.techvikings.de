@@ -38,6 +38,13 @@ export const StatusPage: React.FC = () => {
         <div>Last check</div>
         <div>{date.toLocaleString()}</div>
       </div>
+      <a
+        href="http://valheim-map.world/index.html?seed=aFn88455en&offset=0%2C0&zoom=0.600"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Spoil me the map!
+      </a>
     </div>
   );
 };
