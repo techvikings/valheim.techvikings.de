@@ -35,6 +35,8 @@ export const StatusPage: React.FC = () => {
         <div>{serverStatusQuery.data?.Players?.Current}</div>
         <div>Version</div>
         <div>{serverStatusQuery.data?.Raw?.ExtraData?.Keywords}</div>
+        <div>Seed</div>
+        <div>aFn88455en</div>
         <div>Last check</div>
         <div>{date.toLocaleString()}</div>
       </div>
