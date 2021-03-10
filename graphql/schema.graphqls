@@ -1,0 +1,11 @@
+type Query {
+  serverState: [ServerState!]
+}
+
+type ServerState {
+  id: ID!
+  name: String!
+  playerCount: Int!
+  version: String!
+  timestamp: Int!
+}
