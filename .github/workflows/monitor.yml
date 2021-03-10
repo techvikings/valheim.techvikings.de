@@ -1,0 +1,13 @@
+name: Monitor
+on:
+  schedule:
+    # Every 5 minutes
+    - cron: '*/5 * * * *'
+
+jobs:
+  check-server-state:
+    name: Check server state
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call monitor
+        run: wget ${{ secrets.MONITORING_URL }}
